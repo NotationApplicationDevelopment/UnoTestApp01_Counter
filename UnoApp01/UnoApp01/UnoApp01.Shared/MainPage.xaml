@@ -5,14 +5,37 @@
     xmlns:local="using:UnoApp01"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    Background ="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <ScrollViewer>
         
-        <StackPanel x:Name="layoutRoot" HorizontalAlignment ="Center"  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-		    <TextBlock Text="Hello, Counter!" TextAlignment="Center" Margin="20" FontSize="30" />
-		    <Ellipse x:Name ="circle" Width ="300" Height = "300"  Margin="20" />
-		    <TextBlock x:Name ="counter"  Text="Count = 0" TextAlignment="Center" Margin="20" FontSize="50" />
-            <Button x:Name ="resetButton" Content="Reset" HorizontalAlignment="Center" Margin="20" FontSize="20" ClickMode="Release"  Width="150"/>
+        <StackPanel x:Name = "layoutRoot"
+                    HorizontalAlignment = "Center"
+                    Background ="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            
+		    <TextBlock Text = "Hello, Counter!" 
+                       TextAlignment = "Center" 
+                       FontSize = "30" 
+                       Margin = "20"/>
+            
+		    <Ellipse x:Name = "circle"
+                     Width = "250"
+                     Height = "250"
+                     Margin = "20"/>
+            
+		    <TextBlock x:Name = "counter" 
+                       TextAlignment = "Center" 
+                       FontSize = "50" 
+                       Margin = "20"/>
+            
+            <Button x:Name = "resetButton" 
+                    ClickMode = "Release" 
+                    Content = "Reset" 
+                    HorizontalAlignment = "Center"
+                    Width = "150"
+                    FontSize="20" 
+                    Margin = "20"/>
+            
         </StackPanel>
         
     </ScrollViewer>

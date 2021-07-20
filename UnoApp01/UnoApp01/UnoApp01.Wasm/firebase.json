@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "testDirectory",
+    "public": "bin\\Release\\net5.0\\dist",
     "ignore": [
       "firebase.json",
       "**/.*",

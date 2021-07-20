@@ -19,22 +19,25 @@ namespace UnoApp01
         {
             InitializeComponent();
 
-            circle.Fill = times % 2 == 0 ? blue : red;
             circle.Tapped += Circle_Tapped;
             resetButton.Click += ResetButton_Click;
-            counter.Text = "Count = " + times;
+
+            SetTimes(0);
         }
 
         private void ResetButton_Click(object sender, RoutedEventArgs e)
         {
-            times = 0;
-            circle.Fill = times % 2 == 0 ? blue : red;
-            counter.Text = "Count = " + times;
+            SetTimes(0);
         }
 
         private void Circle_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
         {
-            times++;
+            SetTimes(times + 1);
+        }
+
+        private void SetTimes(int t)
+        {
+            times = t;
             circle.Fill = times % 2 == 0 ? blue : red;
             counter.Text = "Count = " + times;
         }
